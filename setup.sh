@@ -65,7 +65,7 @@ if [[ -f "$HM_NIX" ]]; then
 fi
 log "Using home.stateVersion = $STATE_VERSION"
 
-curl -fsSL -o "$HM_NIX" https://raw.githubusercontent.com/tanujdargan/nixos/refs/heads/main/home.nix
+curl -fsSL -o "$HM_NIX" https://raw.githubusercontent.com/tanujdargan/kubuntu/refs/heads/main/home.nix
 sed -i "s/home\.stateVersion = \".*\";/home.stateVersion = \"$STATE_VERSION\";/" "$HM_NIX"
 finish
 
@@ -153,7 +153,7 @@ finish
 # ─── 11 ▸ Flatpak GUI apps ────────────────────────────────────────────────
 step "Step 11/11 ▸ Flatpak GUI apps…"
 GUI_APPS=(md.obsidian.Obsidian org.telegram.desktop com.slack.Slack \
-          com.obsproject.Studio com.tailscale.Tailscale)
+          com.obsproject.Studio org.fkoehler.KTailctl)
 for APP in "${GUI_APPS[@]}"; do
   if flatpak list --app | grep -q "${APP##*.}"; then
     log "$APP already installed ✔"
