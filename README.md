@@ -15,3 +15,10 @@ This script will do the following:
 8) Install Vencord via apt
 9) Install Spicetify
 10) Install remaining GUI based apps via flatpak
+
+### Quick Run
+```bash
+curl -O https://raw.githubusercontent.com/tanujdargan/kubuntu/refs/heads/main/setup.sh
+chmod u+x ./setup.sh
+./setup.sh
+```
