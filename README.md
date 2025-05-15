@@ -22,3 +22,6 @@ curl -O https://raw.githubusercontent.com/tanujdargan/kubuntu/refs/heads/main/se
 chmod u+x ./setup.sh
 ./setup.sh
 ```
+
+### Installing Cursor IDE
+`curl -fsSL https://raw.githubusercontent.com/watzon/cursor-linux-installer/main/install.sh | bash -s -- latest`
