@@ -48,5 +48,11 @@
   programs.git.enable = true;
   programs.firefox.enable = true;
 
+  programs.git = {
+    enable = true;
+    userName = "Tanuj Dargan";
+    userEmail = "dargantanuj@gmail.com";
+  };
+
   home.stateVersion = "24.11";
 }
